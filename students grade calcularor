@@ -1,0 +1,37 @@
+#student grade calculator 
+telugu=int(input("enter your telugu markes ="))
+english=int(input("enter your english markes ="))
+maths=int(input("enter your maths markes ="))
+physics=int(input("enter your physics markes ="))
+chemistry=int(input("enter your chemistry markes ="))
+
+#total markes calculator
+total = telugu+english+maths+physics+chemistry
+
+#total average calculator 
+average = total/5
+
+#grade calculator 
+if average>=90:
+    grade = "A"
+elif average>=75:
+    grade = "B"   
+elif average>=60:
+    grade = "C"  
+elif average>=50:
+    grade = "D"   
+elif average>=40:
+    grade = "E"  
+else:
+    grade ="F"
+
+if average>=40:
+    result = "pass"    
+else:
+    result = "fail" 
+
+print("total markes =",total)
+print("average markes =",average)
+print("grade =",grade)
+print("result =",result)       
+       

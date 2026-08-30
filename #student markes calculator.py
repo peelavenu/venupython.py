@@ -5,10 +5,9 @@ hall_ticket=2606111786
 hallticket=int(input("enter your hall ticket number ="))
 
 if hallticket==hall_ticket:
-    print("==please fill the below detailes ==")
+    print("== please fill the below detailes ==")
 else:
     print("please check your hall ticket number")    
-
 
 telugu=int(input("enter telugu markes ="))
 english=int(input("enter english markes ="))
@@ -28,7 +27,7 @@ if english>=30:
 else:
     print("english ------> B")
 if maths>=30:
-    print("math -----> A")
+    print("math -----> A+")
 else:
     print("math ------> B")
 
@@ -38,4 +37,3 @@ if total>=85:
     print("you are pass")
 else:
     print("you are fail")
-

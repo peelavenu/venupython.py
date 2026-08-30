@@ -1,0 +1,11 @@
+#student markeds calculator finder 
+a = int(input("enter your  telugu markes ="))
+b = int(input("enter your english markes ="))
+c = int(input("enter your physics markes ="))
+d = int(input("enter your chemistry markes ="))
+e = int(input("enter your maths markes ="))
+
+total=a+b+c+d+e
+print("total markes =",total)
+
+

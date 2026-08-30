@@ -1,0 +1,4 @@
+list_1 = int(input("enter your list --> 1 ="))
+list_2 = int(input("enter your list --> 2 ="))
+ 
+ 

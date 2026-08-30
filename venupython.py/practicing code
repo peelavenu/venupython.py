@@ -1,0 +1,12 @@
+number = []
+
+for i in range(5):
+    num = int(input("enter a number ="))
+    number.append(num)
+count = 0
+for num in number:
+    if num % 2==0:
+        count += 1
+print("even number =",count)
+
+
