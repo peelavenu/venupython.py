@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>SLS Groups of Technology and Suppliers</title>
+<style>
+:root{color-scheme:dark;--bg:#050b1a;--card:rgba(20,40,90,.45);--blue:#2f7bff;--cyan:#38e1ff;--text:#eaf1ff;--mute:#9db0d6;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:70px}
+body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,system-ui,Segoe UI,Arial,sans-serif;line-height:1.6}
+#bg{position:fixed;inset:0;z-index:0}
+main,header,footer{position:relative;z-index:1}
+header{position:fixed;top:env(safe-area-inset-top,0px);left:0;right:0;z-index:5;display:flex;align-items:center;justify-content:space-between;padding:12px 5%;background:rgba(5,11,26,.7);backdrop-filter:blur(10px)}
+.logo{display:flex;align-items:center;gap:10px;font-weight:800;color:#fff;text-decoration:none}
+.logo b{display:grid;place-items:center;width:48px;height:48px;border-radius:10px;background:linear-gradient(135deg,var(--blue),var(--cyan));font-size:16px;box-shadow:0 0 20px rgba(47,123,255,.7)}
+.logo span{font-size:14px;line-height:1.2}
+.logo .bn{display:block;font-size:24px;font-weight:800;letter-spacing:1px;line-height:1.1}
+.logo small{display:block;font-weight:500;font-size:11px;color:var(--cyan);margin-top:3px;line-height:1.35}
+nav a{color:var(--mute);text-decoration:none;margin-left:18px;font-size:14px}nav a:hover{color:var(--cyan)}
+section{padding:90px 5%;max-width:1150px;margin:auto}
+.hero{min-height:100vh;display:flex;flex-direction:column;justify-content:center}
+.tag{color:var(--cyan);letter-spacing:3px;font-size:12px;text-transform:uppercase}
+h1{font-size:clamp(22px,3.6vw,38px);line-height:1.2;margin:6px 0;font-weight:700}
+.bname{font-size:clamp(34px,7vw,76px);font-weight:800;line-height:1.05;margin:12px 0 4px;background:linear-gradient(90deg,#fff,var(--cyan) 60%,var(--blue));-webkit-background-clip:text;background-clip:text;color:transparent;text-shadow:0 0 40px rgba(47,123,255,.4)}
+h1 em{font-style:normal;background:linear-gradient(90deg,var(--blue),var(--cyan));-webkit-background-clip:text;background-clip:text;color:transparent}
+.sub{color:var(--mute);max-width:620px;font-size:18px}
+.partner{display:inline-block;margin-top:18px;padding:8px 14px;border:1px solid rgba(56,225,255,.4);border-radius:30px;font-size:13px;color:var(--cyan)}
+.btns{margin-top:28px;display:flex;gap:14px;flex-wrap:wrap}
+.btn{padding:13px 26px;border-radius:12px;font-weight:700;text-decoration:none;color:#fff;background:linear-gradient(135deg,var(--blue),#1448c9);box-shadow:0 8px 30px rgba(47,123,255,.45);transition:.3s}
+.btn.o{background:transparent;border:1px solid var(--blue);box-shadow:none}
+.btn:hover{transform:translateY(-4px) scale(1.04)}
+h2{font-size:clamp(26px,4vw,40px);margin:0 0 8px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:22px;margin-top:30px;perspective:1000px}
+.card{background:var(--card);border:1px solid rgba(120,160,255,.2);border-radius:18px;padding:26px;backdrop-filter:blur(8px);transform-style:preserve-3d;transition:transform .15s,box-shadow .3s}
+.card:hover{box-shadow:0 20px 50px rgba(47,123,255,.35)}
+.card .ic{font-size:38px;transform:translateZ(40px);display:block}
+.card h3{margin:10px 0 6px;transform:translateZ(25px)}.card p{color:var(--mute);margin:0;font-size:15px}
+.counters{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:22px;text-align:center}
+.counters div{padding:28px;border-radius:18px;background:var(--card);border:1px solid rgba(120,160,255,.2)}
+.counters strong{display:block;font-size:48px;color:var(--cyan)}
+.reveal{opacity:0;transform:translateY(40px);transition:1s}.reveal.on{opacity:1;transform:none}
+.contact{text-align:center;background:var(--card);border-radius:24px;border:1px solid rgba(120,160,255,.25)}
+.contact p{color:var(--mute);max-width:560px;margin:10px auto}
+footer{text-align:center;padding:30px 5%;color:var(--mute);font-size:13px}
+a.link{color:var(--cyan)}
+form{max-width:560px;margin:24px auto 0;display:grid;gap:12px;text-align:left}
+form input,form textarea{width:100%;padding:13px 15px;border-radius:12px;border:1px solid rgba(120,160,255,.3);background:rgba(5,11,26,.7);color:var(--text);font:inherit}
+form input:focus,form textarea:focus{outline:2px solid var(--cyan)}
+form button{border:0;cursor:pointer;font:inherit;font-weight:700}
+@media(max-width:700px){nav{display:none}}
+@media(prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+</head>
+<body>
+<canvas id="bg"></canvas>
+<header>
+  <a class="logo" href="#home"><b>SLS</b><span><strong class="bn">SLS GROUPS</strong>Technology &amp; Suppliers<small>Founder: Peela Venu<br>📍 Anakapalli, Gavarapalem, Nookambika Temple</small></span></a>
+  <nav><a href="#services">Services</a><a href="#stats">Projects</a><a href="#partner">Partner</a><a href="#contact">Contact</a></nav>
+</header>
+<main>
+<section class="hero" id="home">
+  <div class="tag">Events · Decorations · AI · Web</div>
+  <div class="bname">SLS Groups of Technology and Suppliers</div>
+  <h1>Quality Events &amp; Technology at <em>Low Prices</em></h1>
+  <p class="sub">SLS Groups of Technology and Suppliers gives and rents beautiful event decorations at low prices, and builds AI tools, business websites and digital marketing for growing shops and companies.</p>
+  <span class="partner">Main Partner &amp; Supplier: Sri Laxmi Tent House and Decorations, Anakapalli</span>
+  <div class="btns"><a class="btn" href="#contact">Start Your Project</a><a class="btn o" href="#services">Our Services</a></div>
+</section>
+
+<section id="services">
+  <h2 class="reveal">What We Do</h2>
+  <p class="sub reveal">Everything for your event and your business, in one place.</p>
+  <div class="grid">
+    <div class="card reveal"><span class="ic">⛺</span><h3>Tent House</h3><p>Tents, chairs, stages and setups on rent at honest prices.</p></div>
+    <div class="card reveal"><span class="ic">🎉</span><h3>Event Decorations</h3><p>Weddings, birthdays and functions decorated with quality and style.</p></div>
+    <div class="card reveal"><span class="ic">🤖</span><h3>AI Tools Making</h3><p>Custom AI tools and automation that save your time and cost.</p></div>
+    <div class="card reveal"><span class="ic">🌐</span><h3>Website Building</h3><p>Fast, modern websites for businesses and local shops.</p></div>
+    <div class="card reveal"><span class="ic">📈</span><h3>Digital Marketing</h3><p>Social media, ads and branding that bring real customers.</p></div>
+    <div class="card reveal"><span class="ic">🏪</span><h3>Local Shop Marketing</h3><p>Help small shops get found online and grow in their area.</p></div>
+  </div>
+</section>
+
+<section id="stats">
+  <h2 class="reveal">Our Work in Numbers</h2>
+  <div class="counters" style="margin-top:26px">
+    <div class="reveal"><strong data-n="100" data-s="+">0</strong>Events &amp; Decorations</div>
+    <div class="reveal"><strong data-n="6" data-s="">0</strong>Services Offered</div>
+    <div class="reveal"><strong data-n="100" data-s="%">0</strong>Quality Focus</div>
+  </div>
+</section>
+
+<section id="partner">
+  <h2 class="reveal">Our Partner</h2>
+  <div class="grid"><div class="card reveal" style="grid-column:1/-1">
+    <h3>Sri Laxmi Tent House and Decorations</h3>
+    <p>Gavarapalem, Santhosi Mata temple, Nookambika temple area, Anakapalli. Our main partner and supplier for tent house and decoration services.</p>
+    <p style="margin-top:12px"><a class="link" href="https://peelavenu.github.io/Sri-Laxmi-decorations-tent-house.com/" target="_blank" rel="noopener">Visit their website →</a></p>
+  </div></div>
+</section>
+
+<section id="contact">
+  <div class="contact" style="padding:50px 24px">
+    <h2>Let’s Build Your Project</h2>
+    <p>Email us your project details along with the date and time of submission, and we will get back to you.</p>
+    <form id="cf">
+      <input id="fn" placeholder="Your name" required>
+      <input id="fp" placeholder="Phone number">
+      <input id="fd" placeholder="Date and time of submission (e.g. 5 Nov, 6 PM)">
+      <textarea id="fm" rows="5" placeholder="Your message or project details" required></textarea>
+      <button class="btn" type="submit">✉ Send Message &amp; Project</button>
+    </form>
+    <p style="font-size:14px">Or email us directly: <a class="link" href="mailto:slsgroups0@gmail.com">slsgroups0@gmail.com</a></p>
+    <p style="font-size:15px">📍 Anakapalli, Gavarapalem, Nookambika Temple<br>Founder: <strong>Peela Venu</strong></p>
+  </div>
+</section>
+</main>
+<footer>© SLS Groups of Technology and Suppliers · Founder: Peela Venu<br>Anakapalli, Gavarapalem, Nookambika Temple</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script>
+(function(){
+  try{
+    var c=document.getElementById('bg'),W=innerWidth,H=innerHeight;
+    var r=new THREE.WebGLRenderer({canvas:c,antialias:true,alpha:true});
+    r.setPixelRatio(Math.min(devicePixelRatio,2));r.setSize(W,H);
+    var s=new THREE.Scene();s.fog=new THREE.FogExp2(0x050b1a,.035);
+    var cam=new THREE.PerspectiveCamera(60,W/H,.1,200);cam.position.set(0,6,22);
+    var g=new THREE.Group();s.add(g);
+    var B=[],rg=[];
+    var gl=new THREE.Mesh(new THREE.SphereGeometry(7,32,24),new THREE.MeshBasicMaterial({color:0x2f7bff,wireframe:true,transparent:true,opacity:.35}));
+    gl.position.set(10,4,-6);g.add(gl);B.push(gl);
+    var core=new THREE.Mesh(new THREE.SphereGeometry(5.6,24,18),new THREE.MeshBasicMaterial({color:0x0a1b45,transparent:true,opacity:.9}));
+    core.position.copy(gl.position);g.add(core);
+    for(var i=0;i<3;i++){
+      var ring=new THREE.Mesh(new THREE.TorusGeometry(9+i*2.2,.06,8,120),new THREE.MeshBasicMaterial({color:i%2?0x38e1ff:0x2f7bff}));
+      ring.position.copy(gl.position);ring.rotation.set(1.1+i*.5,i*.7,0);g.add(ring);rg.push(ring);
+    }
+    var dp=new Float32Array(260*3);
+    for(i=0;i<260;i++){var a1=Math.random()*6.283,a2=Math.acos(2*Math.random()-1);
+      dp[i*3]=7.05*Math.sin(a2)*Math.cos(a1);dp[i*3+1]=7.05*Math.cos(a2);dp[i*3+2]=7.05*Math.sin(a2)*Math.sin(a1);}
+    var dg=new THREE.BufferGeometry();dg.setAttribute('position',new THREE.BufferAttribute(dp,3));
+    var dots=new THREE.Points(dg,new THREE.PointsMaterial({color:0x38e1ff,size:.25}));
+    dots.position.copy(gl.position);g.add(dots);B.push(dots);
+    var ico=new THREE.Mesh(new THREE.IcosahedronGeometry(3,1),new THREE.MeshBasicMaterial({color:0x38e1ff,wireframe:true}));
+    ico.position.set(9,8,4);s.add(ico);
+    var pts=new THREE.BufferGeometry(),n=500,a=new Float32Array(n*3);
+    for(i=0;i<n*3;i++)a[i]=(Math.random()-.5)*80;
+    pts.setAttribute('position',new THREE.BufferAttribute(a,3));
+    s.add(new THREE.Points(pts,new THREE.PointsMaterial({color:0x38e1ff,size:.08})));
+    var my=0,mx=0;
+    addEventListener('mousemove',function(e){mx=e.clientX/innerWidth-.5;my=e.clientY/innerHeight-.5});
+    addEventListener('resize',function(){W=innerWidth;H=innerHeight;r.setSize(W,H);cam.aspect=W/H;cam.updateProjectionMatrix()});
+    var t=0;
+    (function loop(){
+      t+=.003;g.rotation.y=Math.sin(t)*.2;B.forEach(function(b){b.rotation.y+=.004});rg.forEach(function(r,k){r.rotation.z+=.006*(k+1)});ico.rotation.x+=.008;ico.rotation.y+=.01;
+      cam.position.y=6-scrollY*.004+my*-2;cam.position.x=mx*4;cam.lookAt(0,4,0);
+      r.render(s,cam);requestAnimationFrame(loop);
+    })();
+  }catch(e){}
+  // contact form opens the visitor’s email app, addressed to SLS Groups
+  document.getElementById('cf').addEventListener('submit',function(e){
+    e.preventDefault();
+    var v=function(i){return document.getElementById(i).value.trim()};
+    var body='Name: '+v('fn')+'\nPhone: '+v('fp')+'\nDate and time of submission: '+v('fd')+'\n\nMessage / Project details:\n'+v('fm');
+    location.href='mailto:slsgroups0@gmail.com?subject='+encodeURIComponent('New message from '+v('fn'))+'&body='+encodeURIComponent(body);
+  });
+  // 3D tilt cards
+  document.querySelectorAll('.card').forEach(function(el){
+    el.addEventListener('mousemove',function(e){var b=el.getBoundingClientRect();
+      var x=(e.clientX-b.left)/b.width-.5,y=(e.clientY-b.top)/b.height-.5;
+      el.style.transform='rotateY('+x*16+'deg) rotateX('+(-y*16)+'deg)'});
+    el.addEventListener('mouseleave',function(){el.style.transform=''});
+  });
+  // reveal + counters
+  var io=new IntersectionObserver(function(es){es.forEach(function(en){
+    if(!en.isIntersecting)return;en.target.classList.add('on');
+    var n=en.target.querySelector('[data-n]');
+    if(n&&!n.d){n.d=1;var to=+n.dataset.n,k=0,iv=setInterval(function(){k+=Math.ceil(to/40);
+      if(k>=to){k=to;clearInterval(iv)}n.textContent=k+n.dataset.s},35)}
+  })},{threshold:.2});
+  document.querySelectorAll('.reveal').forEach(function(el){io.observe(el)});
+})();
+</script>
+</body>
+</html>
